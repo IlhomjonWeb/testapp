@@ -1,0 +1,22 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+body {
+  background-color: black;
+}
+
+.dark body {
+  background-color: black;
+}

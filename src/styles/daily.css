@@ -1,0 +1,140 @@
+section {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: -2px 1px 16px 0px #B4B4B440;
+}
+
+
+
+.dark section {
+    background-color: black;
+}
+
+.weather-day-info .weather-day-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 7px;
+}
+
+.weather-day-info .weather-day-btn .blue {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.94px;
+    text-align: left;
+    background-color: #4793FF;
+    color: #fff;
+    border: none;
+    padding: 7px 20px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.weather-day-info .weather-day-btn .blue:hover {
+    background-color: #4794ffd3;
+}
+
+.weather-day-info .weather-day-btn .white {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.94px;
+    text-align: left;
+    background-color: white;
+    color: #000;
+    border: none;
+    padding: 7px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    cursor: pointer;
+}
+
+.weather-day-info .weather-day-btn .white:hover {
+    background-color: aliceblue;
+}
+
+.weather-day-info .weather-day-cart {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+@media (max-width: 1050px) {
+    .weather-day-info .weather-day-cart {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .weather-day-info .weather-day-cart {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.weather-day-info .weather-day-cart .cart {
+    padding: 11px;
+    background-color: #4793FF33;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 10px;
+}
+
+.weather-day-info .weather-day-cart .cart h3 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.94px;
+    color: #000;
+    margin-bottom: 7px;
+}
+
+.dark .weather-day-cart .cart h3 {
+    color: white;
+}
+
+.weather-day-info .weather-day-cart .cart .cart-day {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.07px;
+    color: #939CB0;
+    margin-bottom: 12px;
+}
+
+.weather-day-info .weather-day-cart .cart img {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 13px;
+}
+
+.weather-day-info .weather-day-cart .cart .weather-temp {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.94px;
+    color: #000;
+}
+
+.dark .weather-day-cart .cart .weather-temp {
+    color: white;
+}
+
+.weather-day-info .weather-day-cart .cart .weather-second-temp {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15.85px;
+    color: #939CB0;
+    margin-bottom: 6px;
+}
+
+.weather-day-info .weather-day-cart .cart .weather-situation {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15.85px;
+    color: #939CB0;
+}
