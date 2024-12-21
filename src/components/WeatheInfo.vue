@@ -2,7 +2,7 @@
     <section>
         <div class="weather-day-info">
             <div class="weather-day-btn">
-                <button class="blue" @click="get_weather_date">На неделю</button>
+                <button class="blue" @click="get_weather_date('tashkent')">На неделю</button>
                 <!-- {{ this.weatherData }} -->
                 <button class="white" @click="hide_weather_date">Отменить</button>
             </div>
@@ -72,7 +72,7 @@ export default {
         },
         async get_weather_date(cityName) {
             try {
-                if (cityName == undefined) {
+                if (cityName == undefined || cityName === '') {
                     cityName = 'Tashkent';
                 }
                 const data = await weatherService.getCityCoordinates(cityName);
